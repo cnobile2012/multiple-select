@@ -1,0 +1,36 @@
+<div class="multiple-select">
+  <h3></h3>
+  <div class="message"></div>
+  <div class="multiple-select-wrapper">
+    <div class="multiple-select-available">
+      <h5>Available</h5>
+      <select multiple="multiple" name="a-multiple-select"
+              id="id-a-multiple-select" class="multiple-select-both-wrapper">
+      </select>
+    </div> <!-- div.multiple-select-available -->
+    <div class="action">
+      <div id="multiple-select-add">
+        <img src="{{ STATIC_URL }}imgs/select-add.png"
+             alt="Add button" />
+      </div>
+      <div id="multiple-select-remove">
+        <img src="{{ STATIC_URL }}imgs/select-remove.png"
+             alt="Remove button" />
+      </div>
+    </div> <!-- div.action -->
+    <div class="multiple-select-chosen">
+      <h5>Chosen</h5>
+      <select multiple="multiple" name="c-multiple-select"
+              id="id-c-multiple-select" class="multiple-select-both-wrapper">
+      </select>
+    </div> <!-- div.multiple-select-chosen -->
+  </div> <!-- div.multiple-select-wrapper -->
+  <div class="multiple-select-button-wrapper">
+    <button type="submit" class="multiple-select-button">
+      Cancel
+    </button>
+    <button type="submit" class="multiple-select-button multiple-select-submit">
+      Continue
+    </button>
+  </div> <!-- div.multiple-select-button-wrapper -->
+</div> <!-- div.multiple-select -->

@@ -1,0 +1,92 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 3em;
+  background-color: #addbff;
+}
+
+.multiple-select {
+  display: none;
+  min-width: 480px;
+  min-height: 295px;
+  background-color: #addbff;
+  border: 2px solid #999;
+  border-radius: 10px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -khtml-border-radius: 10px;
+  z-index: 1;
+  overflow: auto;
+}
+
+.multiple-select h3 {
+  display: block;
+  width: 100%;
+  margin: 10px auto;
+  text-align: center;
+}
+
+.multiple-select div.message {
+  display: none;
+  width: 100%;
+  margin: 10px 0;
+  color: red;
+  text-align: center;
+}
+
+.multiple-select .multiple-select-wrapper {
+  min-height: 205px;
+  clear: left;
+}
+
+.multiple-select .multiple-select-available,
+.multiple-select .multiple-select-chosen {
+  float: left;
+  width: 200px;
+  margin: 10px 0;
+  overflow: hidden;
+}
+
+.multiple-select .action {
+  float: left;
+  width: 80px;
+  margin: 60px 0;
+  height: 76px;
+}
+
+.multiple-select .action div {
+  width: inherit;
+  padding: 10px 0;
+  text-align: center;
+}
+
+multiple-select h5 {
+  display: block;
+  width: 148px;
+  margin: 0 auto;
+  padding: 2px 0;
+  text-align: center;
+  background-color: white;
+  border: 1px solid #999;
+}
+
+.multiple-select .multiple-select-both-wrapper {
+  display: block;
+  width: 150px;
+  height: 150px;
+  margin: 0 auto;
+  border: 1px solid #999;
+}
+
+.multiple-select .multiple-select-button-wrapper {
+  width: 13em;
+  margin: 0 auto;
+}
+
+.multiple-select .multiple-select-button {
+  display: block;
+  float: left;
+  width: 7em;
+  margin: 12px 5px;
+}
