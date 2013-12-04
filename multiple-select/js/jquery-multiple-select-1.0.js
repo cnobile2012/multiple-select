@@ -19,20 +19,34 @@ var MultiChoiceBox = Class.extend({
     this.__sort = true;
   },
 
+  /*
+    * aData -- Available Data
+    * cData -- Previously Chosen Data
+    * sort  -- true = sort both boxes, false do not sort,
+    *          undefined default to true.
+    */
   setData: function(aData, cData, sort) {
     if(sort === undefined && cData instanceof Boolean) {
       var sort = cData;
-    } else if(cData !== undefined) {
-      this.__mcbCData = this.unique(this.sort(cData), 1);
     }
 
     if(sort !== undefined) {
       this.__sort = sort;
     }
 
+    if(cData !== undefined) {
+      this.__mcbCData = this.unique(this.sort(cData), 1);
+    }
+
     this.__mcbAData = this.unique(this.sort(aData), 1);
   },
 
+  /*
+   * $availableSelect -- The select element for the available options.
+   * $chosenSelect    -- The select element for the chosen options.
+   * $addButton       -- The add button element.
+   * $removeButton    -- The remove button element.
+   */
   multiChoiceBox: function($availableSelect, $chosenSelect,
                            $addButton, $removeButton) {
     this.__$availableSelect = $availableSelect;
