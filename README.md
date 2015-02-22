@@ -12,5 +12,5 @@ your problem.
 
 
 > I'm still in the process of converting this code from a Django code base 
-so please be patient. This will not be a huge project and I should have it 
-tied up in a few weeks.
+so please be patient. This will not be a huge project, but I will need to
+get back to it at some time in the future.
